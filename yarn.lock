@@ -807,17 +807,9 @@ end-of-stream@^1.0.0:
   dependencies:
     once "^1.4.0"
 
-"enhanced-resolve@github:elastic/enhanced-resolve#fix/query-params-for-aliased-loaders":
+"enhanced-resolve@github:elastic/enhanced-resolve#fix/query-params-for-aliased-loaders", enhanced-resolve@~0.9.0:
   version "0.9.1"
   resolved "https://codeload.github.com/elastic/enhanced-resolve/tar.gz/48127d2943d1681fb11bc5916719bad2371af7fe"
-  dependencies:
-    graceful-fs "^4.1.2"
-    memory-fs "^0.2.0"
-    tapable "^0.1.8"
-
-enhanced-resolve@~0.9.0:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-0.9.1.tgz#4d6e689b3725f86090927ccc86cd9f1635b89e2e"
   dependencies:
     graceful-fs "^4.1.2"
     memory-fs "^0.2.0"

@@ -1,5 +1,5 @@
 {
-  "name": "canvas-github-demo",
+  "name": "canvas-plugin-boilerplate",
   "version": "0.0.0",
   "description": "a github demo for canvas",
   "main": "index.js",
@@ -27,5 +27,6 @@
     "eslint-plugin-mocha": "^4.9.0",
     "eslint-plugin-react": "^7.0.1",
     "expect.js": "^0.3.1"
-  }
+  },
+  "dependencies": {}
 }

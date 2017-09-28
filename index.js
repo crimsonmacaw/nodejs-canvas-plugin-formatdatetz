@@ -1,3 +1,5 @@
+import { commonFunctions } from './common/functions';
+
 export default function (kibana) {
   return new kibana.Plugin({
     require: ['canvas'],
@@ -17,8 +19,7 @@ export default function (kibana) {
 
     init(server) {
       // load server functions here, then:
-      const functions = [];
-      functions.forEach(fn => server.plugins.canvas.addFunction(fn));
+      commonFunctions.forEach(fn => server.plugins.canvas.addFunction(fn));
 
       // load any types as well:
       const types = [];

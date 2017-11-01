@@ -1,3 +1,4 @@
+import { serverFunctions } from './server/functions';
 import { commonFunctions } from './common/functions';
 
 export default function (kibana) {
@@ -18,7 +19,8 @@ export default function (kibana) {
     },
 
     init(server) {
-      // load server functions here, then:
+      // register server and common functions in the client runtime
+      serverFunctions.forEach(fn => server.plugins.canvas.addFunction(fn));
       commonFunctions.forEach(fn => server.plugins.canvas.addFunction(fn));
 
       // load any types as well:

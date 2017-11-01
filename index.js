@@ -8,7 +8,7 @@ export default function (kibana) {
     uiExports: {
       hacks: [
         // register functions and the like things with canvas
-        'plugins/canvas-github-demo/lib/load_plugin.js',
+        'plugins/canvas-plugin-boilerplate/lib/load_plugin.js',
       ],
     },
 

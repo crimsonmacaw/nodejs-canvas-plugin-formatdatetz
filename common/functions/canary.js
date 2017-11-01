@@ -1,11 +1,7 @@
-// TODO: internalize this wrapper
-import Fn from '../../../kibana-canvas/common/functions/fn.js';
-
-export default new Fn({
+export const canary = {
   name: 'canary',
   type: 'render',
   fn(context, args) {
-    console.log('CANARY', context, args);
     return {
       type: 'render',
       as: 'markdown',
@@ -14,4 +10,4 @@ export default new Fn({
       },
     };
   }
-});
+};

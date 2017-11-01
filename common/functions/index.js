@@ -1,4 +1,4 @@
-import canary from './canary';
+import { canary } from './canary';
 
 export const commonFunctions = [
   canary

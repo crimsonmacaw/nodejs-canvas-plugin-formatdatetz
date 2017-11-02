@@ -1,6 +1,6 @@
 {
   "name": "canvas-plugin-boilerplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a github demo for canvas",
   "main": "index.js",
   "kibana": {

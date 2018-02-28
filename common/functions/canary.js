@@ -1,4 +1,4 @@
-export const canary = {
+export const canary = () => ({
   name: 'canary',
   type: 'render',
   fn(context, args) {
@@ -10,4 +10,4 @@ export const canary = {
       },
     };
   }
-};
+});

@@ -1,4 +1,4 @@
-export const hello = {
+export const hello = () => ({
   name: 'hello',
   type: 'render',
   fn(context, args) {
@@ -10,4 +10,4 @@ export const hello = {
       },
     };
   }
-};
+});

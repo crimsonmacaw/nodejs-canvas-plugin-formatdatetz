@@ -1,6 +1,6 @@
-# canvas-plugin-boilerplate
+# canvas-plugin-formatdatetz
 
-A boilerplate for canvas plugins
+Plugin for canvas to add a formatdatetz function
 
 # Development
 
@@ -14,12 +14,19 @@ See the [kibana contributing guide](https://github.com/elastic/kibana/blob/maste
 
 For more information about any of these commands run `npm run ${task} -- --help`.
 
-# Concepts
+# Usage
 
-## Registries
+## formatdatetz
 
-Canvas is extended the same way Kibana is, by exposing various registries that plugins use to add functionality. There are two types of registries, client registries and server registries. The former is for the browser runtime, and the later is for the node runtime.
+* **Function**: formatdatetz
+* **Accepts**: number
+* **Returns**: string
 
-Public items need to registered when the application starts. This is most easily done by using a "hack", which will get executed when the application is loaded in the browser. You can see how this works in `public/lib/load_plugins.js`, which registered some public functions and provides a reference for other available registries.
+Output a ms since epoch number as a formatted string according to a given timezone
 
-Server items are intialized as part of the Kibana plugin lifecycle. Consult the `init` section in the top level `index.js` file to see how this works. You'll see that Canvas exposes some registration functions for the server registries. Some server functions are registered in this boilerplate, and you'll also find references to other available registries.
+Arguments
+
+|Name|Aliases|Types|Default|Description|
+|-|-|-|-|
+|Unnamed*||string||MomentJS Format with which to bucket (See https://momentjs.com/docs/#/displaying/)|
+|timezone||string||The timezone in which to display the formatted date|

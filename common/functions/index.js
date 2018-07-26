@@ -1,5 +1,5 @@
-import { canary } from './canary';
+import { formatdatetz } from './formatdatetz';
 
 export const commonFunctions = [
-  canary
+  formatdatetz
 ];

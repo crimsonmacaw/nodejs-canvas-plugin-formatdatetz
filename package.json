@@ -1,7 +1,7 @@
 {
-  "name": "canvas-plugin-boilerplate",
-  "version": "0.1.0",
-  "description": "a github demo for canvas",
+  "name": "canvas-plugin-formatdatetz",
+  "version": "1.0.0",
+  "description": "plugin for canvas to add a formatdatetz function",
   "main": "index.js",
   "kibana": {
     "version": "kibana",
@@ -28,5 +28,7 @@
     "eslint-plugin-react": "^7.0.1",
     "expect.js": "^0.3.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "moment-timezone": "^0.5.21"
+  }
 }

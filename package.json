@@ -4,7 +4,7 @@
   "description": "plugin for canvas to add a formatdatetz function",
   "main": "index.js",
   "kibana": {
-    "version": "kibana",
+    "version": "6.4.2",
     "templateVersion": "7.2.3"
   },
   "scripts": {

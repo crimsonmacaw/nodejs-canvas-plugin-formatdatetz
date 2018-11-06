@@ -12,11 +12,14 @@ export const formatdatetz = () => ({
     _: {
       types: ['string'],
       help: 'MomentJS Format with which to bucket (See https://momentjs.com/docs/#/displaying/)',
+      required: true
     },
 
     timezone: {
       types: ['string'],
-      help: 'The timezone'
+      help: 'The timezone',
+      required: true,
+      default: 'UTC'
     }
   },
   fn: (context, args) => {

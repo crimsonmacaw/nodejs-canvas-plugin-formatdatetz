@@ -28,5 +28,5 @@ Arguments
 
 |Name|Aliases|Types|Default|Description|
 |-|-|-|-|
-|Unnamed*||string||MomentJS Format with which to bucket (See https://momentjs.com/docs/#/displaying/)|
-|timezone||string||The timezone in which to display the formatted date|
+|_Unnamed*_||string||MomentJS Format with which to bucket (See https://momentjs.com/docs/#/displaying/)|
+|timezone||string|UTC|The timezone in which to display the formatted date|

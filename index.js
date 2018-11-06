@@ -1,4 +1,3 @@
-import { serverFunctions } from './server/functions';
 import { commonFunctions } from './common/functions';
 
 export default function (kibana) {
@@ -22,7 +21,6 @@ export default function (kibana) {
       // here we register the available server assets, along with any common assets
 
       // register server and common functions in the client runtime
-      serverFunctions.forEach(fn => server.plugins.canvas.addFunction(fn));
       commonFunctions.forEach(fn => server.plugins.canvas.addFunction(fn));
 
       // additional specs that can be registered but are not used in this boilerplate

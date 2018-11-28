@@ -27,6 +27,6 @@ Output a ms since epoch number as a formatted string according to a given timezo
 Arguments
 
 |Name|Aliases|Types|Default|Description|
-|-|-|-|-|
+|-|-|-|-|-|
 |_Unnamed*_||string||MomentJS Format with which to bucket (See https://momentjs.com/docs/#/displaying/)|
 |timezone||string|UTC|The timezone in which to display the formatted date|

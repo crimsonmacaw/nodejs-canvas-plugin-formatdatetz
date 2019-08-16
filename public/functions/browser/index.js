@@ -1,5 +1,5 @@
 import { formatdatetz } from './formatdatetz';
 
-export const commonFunctions = [
+export const browserFunctions = [
   formatdatetz
 ];

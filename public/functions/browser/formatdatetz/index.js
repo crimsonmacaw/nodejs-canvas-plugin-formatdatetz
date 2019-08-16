@@ -9,8 +9,9 @@ export const formatdatetz = () => ({
     types: ['number'],
   },
   args: {
-    _: {
+    format: {
       types: ['string'],
+      aliases: ['_'],
       help: 'MomentJS Format with which to bucket (See https://momentjs.com/docs/#/displaying/)',
       required: true
     },
@@ -23,7 +24,7 @@ export const formatdatetz = () => ({
     }
   },
   fn: (context, args) => {
-    if (!args._) return moment.utc(new Date(context)).tz(args.timezone).toISOString();
-    return moment.utc(new Date(context)).tz(args.timezone).format(args._);
+    if (!args.format) return moment.utc(new Date(context)).tz(args.timezone).toISOString();
+    return moment.utc(new Date(context)).tz(args.timezone).format(args.format);
   },
 });
